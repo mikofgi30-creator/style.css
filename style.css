@@ -1,1 +1,119 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #0a0a0a, #000);
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont;
+}
 
+/* контейнер */
+.app {
+  padding-bottom: 90px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+/* баланс */
+.balance {
+  padding: 8px 14px;
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(20px);
+
+  font-size: 14px;
+}
+
+/* контент */
+.content {
+  padding: 16px;
+}
+
+/* карточки NFT */
+.card {
+  margin-bottom: 14px;
+  border-radius: 22px;
+
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(25px);
+
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.card-title {
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.card-price {
+  color: #aaa;
+  font-size: 13px;
+}
+
+/* кнопка */
+.buy-btn {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 16px;
+  text-align: center;
+
+  background: rgba(255,255,255,0.1);
+}
+
+.buy-btn:active {
+  transform: scale(0.96);
+}
+
+/* NAV */
+.nav {
+  position: fixed;
+  bottom: 20px;
+  left: 16px;
+  right: 16px;
+
+  display: flex;
+  justify-content: space-around;
+
+  padding: 14px;
+
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(30px);
+
+  border-radius: 30px;
+}
+
+.nav-btn {
+  color: #777;
+  font-size: 20px;
+}
+
+.nav-btn.active {
+  color: white;
+}
+
+/* плавность */
+* {
+  transition: all 0.25s ease;
+}
